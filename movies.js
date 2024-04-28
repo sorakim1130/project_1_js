@@ -16,10 +16,8 @@ fetch(
   .then((data) => {
     // API 응답에서 결과 값을 추출
     const results = data.results;
-
-    const list = document.getElementById("movie-title");
-
     const container = document.getElementById("movie-container");
+
     container.innerHTML = results
       .map(
         (result) => `
