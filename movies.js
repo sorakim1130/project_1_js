@@ -12,6 +12,7 @@ fetch(
   options
 )
   .then((response) => response.json())
+  // .then((response) => console.log(response))
   .then((data) => {
     // API 응답에서 결과 값을 추출
     const results = data.results;
@@ -24,7 +25,7 @@ fetch(
         (result) => `
       <div class="movie-card">
       <img
-          src="https://image.tmdb.org/t/p/w500/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg"
+          src="https://image.tmdb.org/t/p/w500/${result.poster_path}"
           alt="1"
         />
         <h3 class="movie-title">${result.title}</h3>
