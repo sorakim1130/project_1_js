@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <title>Document</title>
+    <script src="movies.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>내배캠 최고 평점 영화 콜렉션</h1>
+    </header>
+    <form class="search-form" onsubmit="handleSearch(event)">
+      <label>영화 검색 : </label>
+      <input
+        type="text"
+        id="search-input"
+        placeholder="영화 제목을 검색해 보세요"
+      />
+      <button type="submit" id="search-btn" class="search-btn">검색</button>
+    </form>
+    <section id="movie-container" class="card-section"></section>
+  </body>
+</html>
